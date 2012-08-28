@@ -1,0 +1,33 @@
+{
+  "name": "star_rating",
+  "title": "Star Rating JS",
+  "description": "Star Rate your stats!",
+  "version": "0.1.0",
+  "homepage": "https://github.com/leobalter/star_rating",
+  "author": {
+    "name": "Estante Virtual",
+    "email": "breno@estantevirtual.com.br",
+    "url": "http://www.estantevirtual.com.br"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/leobalter/star_rating_js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leobalter/star_rating/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/leobalter/star_rating/blob/master/LICENSE-MIT"
+    },
+    {
+      "type": "GPL",
+      "url": "https://github.com/leobalter/star_rating/blob/master/LICENSE-GPL"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">= 1.7.2"
+  },
+  "keywords": []
+}

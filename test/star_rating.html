@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Star Rating JS Test Suite</title>
+  <!-- Load local jQuery. This can be overridden with a ?jquery=___ param. -->
+  <script src="../libs/jquery-loader.js"></script>
+  <!-- Load local QUnit (grunt requires v1.0.0 or newer). -->
+  <link rel="stylesheet" href="../libs/qunit/qunit.css" media="screen">
+  <script src="../libs/qunit/qunit.js"></script>
+  <!-- Load local lib and tests. -->
+  <script src="../src/star_rating.js"></script>
+  <script src="star_rating_test.js"></script>
+  <!-- Removing access to jQuery and $. But it'll still be available as _$, if
+       you REALLY want to mess around with jQuery in the console. REMEMBER WE
+       ARE TESTING YOUR PLUGIN HERE -->
+  <script>window._$ = jQuery.noConflict(true);</script>
+</head>
+<body>
+  <h1 id="qunit-header">Star Rating JS Test Suite</h1>
+  <h2 id="qunit-banner"></h2>
+  <div id="qunit-testrunner-toolbar"></div>
+  <h2 id="qunit-userAgent"></h2>
+  <ol id="qunit-tests"></ol>
+  <div id="qunit-fixture">
+    <script type="text/template" id="starRating" data-title="{rate} rate">
+      <div class="starRating">              
+          <div class="starRatingBack"></div>
+          <div class="starRatingFront"></div>
+      </div>                                
+    </script>
+
+
+    <style>
+      .starRating { width: 100px; }
+    </style>
+
+    <div id="foo">
+      bar
+    </div>
+  </div>
+</body>
+</html>
